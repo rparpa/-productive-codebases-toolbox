@@ -10,7 +10,6 @@
     "format": "prettier --write src/**/*.{ts,tsx,css} --config ./.prettierrc",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
-    "prepare": "husky install",
     "prepublishOnly": "npm run check:code && npm t && npm run build",
     "preview": "vite preview",
     "test": "DEBUG_HIDE_DATE=true jest"
@@ -40,13 +39,11 @@
   "types": "./dist/index.d.ts",
   "devDependencies": {
     "@productive-codebases/toolbox": "^1.0.1",
-    "@types/debug": "^4.1.7",
     "@types/jest": "^29.5.5",
     "@types/lodash.mergewith": "^4.6.7",
     "@types/node": "^18.7.6",
     "@typescript-eslint/eslint-plugin": "^5.34.0",
     "@typescript-eslint/parser": "^5.34.0",
-    "debug": "^4.3.4",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.3",
@@ -66,7 +63,9 @@
     "vite-tsconfig-paths": "^3.5.0"
   },
   "peerDependencies": {
-    "lodash.mergewith": ">=4.x"
+    "lodash.mergewith": ">=4.x",
+    "debug": ">=4.x",
+    "@types/debug": ">=4.x"
   },
   "repository": {
     "type": "git",

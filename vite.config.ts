@@ -15,7 +15,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+      '@productive-codebases/toolbox': path.resolve(__dirname, './src')
     }
   },
   build: {
